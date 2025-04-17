@@ -1,1 +1,47 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /*                                         --- ШРИФТЫ  --- */
+    --main-font: "Inter", sans-serif;
+    --accent-font: "Press Start 2P", sans-serif; 
+
+    /*                                         --- ВЕС ШРИФТОВ --- */
+    --main-font-weight: 400;
+    --card-header-font-weight: 700;
+
+    /*                                         --- РАЗМЕРЫ ШРИФТОВ ---  */
+    --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-description-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+    /*                                         --- ОТСТУПЫ --- */
+    --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4577rem + 9.9531vw, 7.5rem);
+    --card-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+
+    /*                                          --- ЦВЕТА --- */
+
+
+    /*                                          --- ЗАДНИЙ ФОН --- */
+    --background-image:repeating-linear-gradient( to bottom, #d3d3d3 0px 2px, transparent 2px 4px), 
+                       repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px), 
+                       repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+
+    /*                                          --- ЦВЕТА ИКОНКИ СЕРДЦА ---  */
+    --contour-color: #000;
+    --core-color: #fff;
+    --body-color: #FF0000;
+    --sparks-color: #FF0000;
+
+    /*                                          --- цвета --- */
+    --border-color: #000;
+
+    --header-background: #fff;
+
+    --card-background-header: #fff;
+    --card-background-feedback: #fff;
+    --card-text-color: #000;
+
+    --button-color: #fff;
+    --button-background: #fff;
+
+    --dialog-text-color: #000;
+}
