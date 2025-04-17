@@ -34,6 +34,8 @@
     /*                                          --- цвета --- */
     --border-color: #000;
 
+    --watermark-shadow-color: #fff;
+
     --header-background: #fff;
 
     --card-background-header: #fff;
@@ -42,6 +44,7 @@
 
     --button-color: #fff;
     --button-background: #fff;
+    --button-shadow-color: #000;
 
     --dialog-text-color: #000;
 }

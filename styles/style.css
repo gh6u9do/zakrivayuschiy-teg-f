@@ -97,6 +97,7 @@
   line-height: 1.2;
 
   font-weight: 700;
+  font-variation-settings: "wght" 700;
   font-size: 18px;
 
   border-block-end: 2px solid var(--border-color);
@@ -162,13 +163,16 @@
   inset-block-start: 25px;
   inset-inline-end: 25px;
 
-  text-shadow: 1px 0 0 #fff, 0px 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  text-shadow: 1px 0 0 var(--watermark-shadow-color),
+               0px 1px 0 var(--watermark-shadow-color),
+               -1px 0 0 var(--watermark-shadow-color),
+               0 -1px 0 var(--watermark-shadow-color);
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
   .card__wotermark {
     text-shadow: none;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--watermark-shadow-color);
   }
 }
 
@@ -215,7 +219,7 @@
 
   border: 2px solid transparent;
 
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -227,7 +231,8 @@
 }
 
 .card__like-button {
-  block-size: 38px;
+  block-size: 100%;
+  max-block-size: 38px;
   inline-size: 100%;
   max-inline-size: 130px;
 
@@ -346,7 +351,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 0 #000;
+  box-shadow: 2px 2px 0 0 var(--button-shadow-color);
 }
 
 .button__content {
