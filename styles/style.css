@@ -31,7 +31,6 @@
   margin-block-start: 100px;
 
   max-width: 700px;
-  max-height: 368px;
 
   padding: var(--header-padding);
 
@@ -160,8 +159,8 @@
   mix-blend-mode: hard-light;
   opacity: 0.5;
 
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
+  inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
+  inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
 
   text-shadow: 1px 0 0 var(--watermark-shadow-color),
                0px 1px 0 var(--watermark-shadow-color),
@@ -201,14 +200,12 @@
   display: flex;
   justify-content: end;
   gap: 5px;
-
-  max-block-size: 38px;
 }
 
 .card__icon-button {
   cursor: pointer;
 
-  width: fit-content;
+  inline-size: fit-content;
   padding: 0;
 
   display: flex;
@@ -232,7 +229,6 @@
 
 .card__like-button {
   block-size: 100%;
-  max-block-size: 38px;
   inline-size: 100%;
   max-inline-size: 130px;
 
